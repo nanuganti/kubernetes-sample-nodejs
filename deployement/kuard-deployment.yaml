@@ -4,12 +4,12 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   creationTimestamp: "2024-05-10T20:21:49Z"
-  generation: 4
+  generation: 5
   labels:
     run: kuard
   name: kuard
   namespace: default
-  resourceVersion: "25195"
+  resourceVersion: "26253"
   uid: 7cd38b6d-afeb-4a62-998f-da9dfb7b57de
 spec:
   progressDeadlineSeconds: 600
@@ -56,7 +56,7 @@ status:
     reason: MinimumReplicasAvailable
     status: "True"
     type: Available
-  observedGeneration: 4
+  observedGeneration: 5
   readyReplicas: 3
   replicas: 3
   updatedReplicas: 3
