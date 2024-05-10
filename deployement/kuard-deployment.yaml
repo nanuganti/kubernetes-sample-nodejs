@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
+    kubernetes.io/change-cause: "change to greeen version"
   creationTimestamp: "2024-05-10T20:21:49Z"
   generation: 5
   labels:
@@ -30,7 +31,7 @@ spec:
         run: kuard
     spec:
       containers:
-      - image: gcr.io/kuar-demo/kuard-amd64:blue
+      - image: gcr.io/kuar-demo/kuard-amd64:green
         imagePullPolicy: IfNotPresent
         name: kuard
         resources: {}
