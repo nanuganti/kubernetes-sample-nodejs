@@ -4,12 +4,12 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   creationTimestamp: "2024-05-10T20:21:49Z"
-  generation: 3
+  generation: 4
   labels:
     run: kuard
   name: kuard
   namespace: default
-  resourceVersion: "21763"
+  resourceVersion: "25195"
   uid: 7cd38b6d-afeb-4a62-998f-da9dfb7b57de
 spec:
   progressDeadlineSeconds: 600
@@ -42,7 +42,7 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
 status:
-  availableReplicas: 2
+  availableReplicas: 3
   conditions:
   - lastTransitionTime: "2024-05-10T20:21:49Z"
     lastUpdateTime: "2024-05-10T20:21:50Z"
@@ -50,13 +50,13 @@ status:
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2024-05-10T20:28:51Z"
-    lastUpdateTime: "2024-05-10T20:28:51Z"
+  - lastTransitionTime: "2024-05-10T21:25:48Z"
+    lastUpdateTime: "2024-05-10T21:25:48Z"
     message: Deployment has minimum availability.
     reason: MinimumReplicasAvailable
     status: "True"
     type: Available
-  observedGeneration: 3
-  readyReplicas: 2
-  replicas: 2
-  updatedReplicas: 2
+  observedGeneration: 4
+  readyReplicas: 3
+  replicas: 3
+  updatedReplicas: 3
